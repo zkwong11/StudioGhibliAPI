@@ -34,28 +34,38 @@
         <!-- Jumbotron Header -->
         <header>
             <div class="container-fluid">
-                <div class="jumbotron border-dark pt-3 pb-3">
+                <div class="jumbotron border-dark pt-3 pb-3 mb-0">
                     <h1 class="h1">Studio Ghibli Filmography</h1>
                     <hr class="hr-1">
                     <h4 class="text-muted">A collection of Studio Ghibli films over the years, created from the Studio Ghibli API.</h2>
                 </div>
             </div>
         </header>
+        <!-- Search bar -->
+        <div class="container-fluid">
+            <div class="input-group mt-3 mb-3">
+                <input type="text" placeholder="Search for full title (e.g. spirited away)." class="form-control searchBar">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Film Cards -->
-        <div class="container-fluid cf-1">
+        <div class="container-fluid cards-section">
             <div class="row justify-content-center">
                 <div class="card0 col-xs-12 col-sm-6 col-lg-3">
                     <div class="card border-dark mb-3 shadow">
                         <div class="card-header d-inline">
-                            <h2 class="titles"></h2>
-                            <div class="rd"></div>
+                            <h2 class="titles0"></h2>
+                            <div class="rd0"></div>
                         </div>
                         <div class="card-body">
-                            <div class="description"></div>
+                            <div class="description0"></div>
                         </div>
                         <div class="card-text ml-3 mr-3 mb-3">
-                            <div class="director text-right"></div>
-                            <div class="rt text-right"></div>
+                            <div class="director0 text-right"></div>
+                            <div class="rt0 text-right"></div>
                             <hr>
                             <div class="text-center">
                                 <a href="#" class="btn-custom0 btn btn-primary">Close</a>
