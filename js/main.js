@@ -27,7 +27,7 @@ let g_data = "";
         getAllInfo();
 
     } catch(err) {
-        alert("HTTP req failed!");
+        // alert("HTTP req failed!");
         console.error(err);
     }
 })();
@@ -39,11 +39,10 @@ function getAllInfo() {
             document.querySelector(`.titles${i}`).innerHTML = titles[i];
             document.querySelector(`.rd${i}`).innerHTML = rd[i];
             document.querySelector(`.director${i}`).innerHTML = `Director: ${director[i]}`;
-            document.querySelector(`.description${i}`).innerHTML = `Description: ${desc[i]}`;
+            document.querySelector(`.description${i}`).innerHTML = `${desc[i]}`;
             document.querySelector(`.rt${i}`).innerHTML = `Rating: ${rt[i]}`;
     }
 }
-
 
 
 // SEARCH FUNCTIONALITY
@@ -93,83 +92,10 @@ document.querySelector(".searchButton").addEventListener("click", function() {
 })
 
 
-// Button Close Cards (btn-custom)
-document.querySelector(".btn-custom0").addEventListener("click", function(){
-    $('.card0').remove()
-});
-
-document.querySelector(".btn-custom1").addEventListener("click", function(){
-    $('.card1').remove()
-});
-
-document.querySelector(".btn-custom2").addEventListener("click", function(){
-    $('.card2').remove()
-});
-
-document.querySelector(".btn-custom3").addEventListener("click", function(){
-    $('.card3').remove()
-});
-
-document.querySelector(".btn-custom4").addEventListener("click", function(){
-    $('.card4').remove()
-});
-
-document.querySelector(".btn-custom5").addEventListener("click", function(){
-    $('.card5').remove()
-});
-
-document.querySelector(".btn-custom6").addEventListener("click", function(){
-    $('.card6').remove()
-});
-
-document.querySelector(".btn-custom7").addEventListener("click", function(){
-    $('.card7').remove()
-});
-
-document.querySelector(".btn-custom8").addEventListener("click", function(){
-    $('.card8').remove()
-});
-
-document.querySelector(".btn-custom9").addEventListener("click", function(){
-    $('.card9').remove()
-});
-
-document.querySelector(".btn-custom10").addEventListener("click", function(){
-    $('.card10').remove()
-});
-
-document.querySelector(".btn-custom11").addEventListener("click", function(){
-    $('.card11').remove()
-});
-
-document.querySelector(".btn-custom12").addEventListener("click", function(){
-    $('.card12').remove()
-});
-
-document.querySelector(".btn-custom13").addEventListener("click", function(){
-    $('.card13').remove()
-});
-
-document.querySelector(".btn-custom14").addEventListener("click", function(){
-    $('.card14').remove()
-});
-
-document.querySelector(".btn-custom15").addEventListener("click", function(){
-    $('.card15').remove()
-});
-
-document.querySelector(".btn-custom16").addEventListener("click", function(){
-    $('.card16').remove()
-});
-
-document.querySelector(".btn-custom17").addEventListener("click", function(){
-    $('.card17').remove()
-});
-
-document.querySelector(".btn-custom18").addEventListener("click", function(){
-    $('.card18').remove()
-});
-
-document.querySelector(".btn-custom19").addEventListener("click", function(){
-    $('.card19').remove()
-});
+//Button Close Cards (btn-custom)
+for (let i = 0; i < 20; i++) {
+    document.querySelector(`.btn-custom${i}`).addEventListener("click", function(e){
+        e.preventDefault();
+        $(`.card${i}`).remove()
+    });
+}
