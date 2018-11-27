@@ -180,3 +180,51 @@ i:hover {
         transform: none;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .right-col {
+        height: 50vh;
+    }
+
+    .left-col {
+        height: 50vh;
+    }
+
+    img {
+        max-height: 200px;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    h1 {
+        letter-spacing: 5px;
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    .btn-enter {
+        margin-top: 1.5rem;
+    }
+
+    .github-desc {
+        font-size: .7rem;
+    }
+
+    i:hover {
+        color: #fff;
+        transform: none;
+    }
+
+    .btn-enter {
+        margin-top: 1.5rem;
+        padding: .5rem 3rem;
+        transition: none;
+        box-shadow: none;
+    }
+}

@@ -74,6 +74,7 @@ document.querySelector(".searchBar").addEventListener("keypress", function(e) {
     }
 })
 
+
 // Search Button clicked event
 document.querySelector(".searchButton").addEventListener("click", function() {
     let indexOfTitle = 0;
@@ -87,6 +88,7 @@ document.querySelector(".searchButton").addEventListener("click", function() {
     // Get Index of Array and scroll to card using the index
     if (lower_titles.includes(inputLetters)) {
         indexOfTitle = lower_titles.indexOf(inputLetters);
+        console.log(indexOfTitle);
         document.querySelector(`.card${indexOfTitle}`).scrollIntoView({ block: 'start',  behavior: 'smooth' });
     } 
 })
